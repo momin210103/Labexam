@@ -1,14 +1,20 @@
-import {Button} from "flowbite-react"
 import './App.css'
 import Navbar from "./components/Navbar"
+import { Footer } from "./components/Footer"
+import Gallery from "./components/Gallery"
+import { Outlet } from 'react-router'
 
 function App() {
   
 
   return (
     <>
-    <Button>Click me</Button>
-      <Navbar></Navbar>
+    <Navbar/>
+    <main>
+      <Outlet></Outlet>
+    </main>
+    
+    <Footer></Footer>
     </>
   )
 }
